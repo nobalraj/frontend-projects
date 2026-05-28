@@ -491,8 +491,119 @@
             transition: transform 0.4s ease;
         }
         .cus-img:hover img {
-  transform: scale(1.1);
+            transform: scale(1.1);
+        }
+        /* General Layout & Background */
+.contact-section {
+    background-color: #222831;
+    color: #ffffff;
+    padding: 60px 0 30px 0;
+    font-family: 'Poppins', sans-serif;
 }
+
+.container-cont {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+/* Three-column layout */
+.about {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    text-align: center;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+
+.cont-box {
+    flex: 1;
+    min-width: 250px;
+}
+
+/* Headings styling */
+.cont-box h3 {
+    font-size: 24px;
+    margin-bottom: 20px;
+    font-weight: 600;
+}
+
+/* Special styling for the middle column (Feane) */
+.central-box h3 {
+    font-family: 'Dancing Script', cursive; /* Optional: matches the logo style */
+    font-size: 28px;
+}
+
+.cont-box p {
+    color: #cbd5e1;
+    line-height: 1.6;
+    margin: 10px 0;
+    font-size: 15px;
+}
+
+.cont-box i {
+    margin-right: 5px;
+    color: #ffffff;
+}
+
+/* Social Media Icons Styling */
+.icons {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 20px;
+}
+
+.ic a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    background-color: #3f500063;
+    color: #222831;
+    border-radius: 50%;
+    text-decoration: none;
+    transition: all 0.3s ease;
+    font-size: 18px;
+}
+
+/* Hover effects for social links */
+.ic a:hover {
+    background-color: #ffbe33; /* Theme yellow color */
+    color: #ffffff;
+    transform: translateY(-3px);
+}
+
+/* Divider & Copyright styling */
+.footer-divider {
+    border: 10;
+    height: 1px;
+    background: rgba(255, 255, 255, 0.1);
+    margin: 40px 0 20px 0;
+}
+
+.copy-right {
+    text-align: center;
+    font-size: 14px;
+    color: #94a3b8;
+    line-height: 1.5;
+}
+
+/* Responsive adjustment for mobile screens */
+@media (max-width: 768px) {
+    .about {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .cont-box {
+        margin-bottom: 20px;
+    }
+}
+        
+
 
 
     </style>
@@ -866,6 +977,47 @@
         </div>
         
     </section>
+
+    <section class="contact-section">
+    <div class="container-cont">
+        <div class="about">
+            <div class="cont-box">
+                <h3>Contact Us</h3>
+                <p><i class="bi bi-geo-alt-fill"></i> Location</p>
+                <p><i class="bi bi-telephone-fill"></i> Call +91 6369859447</p>
+                <p><i class="bi bi-envelope-fill"></i> nobalraj@gmail.com</p>
+            </div>
+            
+            <div class="cont-box central-box">
+                <h3>Feane</h3>
+                <p>Necessary, making this the <br>
+                   first true generator on the <br>
+                   Internet. It uses a dictionary <br>
+                   of over 200 Latin words, <br>
+                   combined with</p>
+                
+                <div class="icons">
+                    <div class="ic"><a href="#"><i class="bi bi-facebook"></i></a></div>
+                    <div class="ic"><a href="#"><i class="bi bi-whatsapp"></i></a></div>
+                    <div class="ic"><a href="#"><i class="bi bi-instagram"></i></a></div>
+                </div>
+            </div>
+
+            <div class="cont-box">
+                <h3>Opening Hours</h3>
+                <p>Everyday</p>
+                <p>10:00 Am - 10:00 Pm</p>
+            </div>
+        </div>
+
+        <hr class="footer-divider">
+
+        <div class="copy-right">
+            <p>© 2026 All Rights Reserved By Free Html Templates</p>
+            <p>© Distributed By ThemeWagon</p>
+        </div>
+    </div>
+</section>
 
 </body>
 </html>
